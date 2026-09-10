@@ -41,27 +41,27 @@ session.
 
 ## Disclaimers:
 
-This is the very first release.
-It is very rough around the edges.
-NixPkgs is community maintained.
-Use common sense.
+This is the very first release.  
+It is very rough around the edges.  
+NixPkgs is community maintained.  
+Use common sense.  
 
 ## Thanks and Acknowledgements
 
-This entire project relies on Devuan, which is GPL3.
-The Devuan and Debian developers are amazing and I owe them massive thanks.
-Thanks to the NixOS community for creating NixPkgs under MIT.
-Thanks to Steven Barrett for making the Liquorix Kernel under GPL2.
-Thanks to rtlewis1/RTL88 for making the GTK/QT theme under Creative Commons.
-Thanks to jessicaamber for making the cursor icon under Creative Commons.
-Thanks to Sam Hewitt for the Suru-grounded icon set under GPL3.
+This entire project relies on Devuan, which is GPL3.  
+The Devuan and Debian developers are amazing and I owe them massive thanks.  
+Thanks to the NixOS community for creating NixPkgs under MIT.  
+Thanks to Steven Barrett for making the Liquorix Kernel under GPL2.  
+Thanks to rtlewis1/RTL88 for making the GTK/QT theme under Creative Commons.  
+Thanks to jessicaamber for making the cursor icon under Creative Commons.  
+Thanks to Sam Hewitt for the Suru-grounded icon set under GPL3.  
 Thanks to Matthieu James and the Canonical Design Team for the original
-Suru icon set.
-Thanks to Andrea Bonanni and Gustavo Costa.
-Thanks to Keefer Rourke for the La Capitaine icon set under GPL3/MIT.
-Thanks to the Numix team for the mimetypes icons under GPL3.
-Thanks to Alexey Varfolomeev for the Papirus icons under GPL3.
-Thanks to Gravit Designer for the Numberless icons under GPL3/MIT.
-Twenoji was created by Twitter Team under MIT.
+Suru icon set.  
+Thanks to Andrea Bonanni and Gustavo Costa.  
+Thanks to Keefer Rourke for the La Capitaine icon set under GPL3/MIT.  
+Thanks to the Numix team for the mimetypes icons under GPL3.  
+Thanks to Alexey Varfolomeev for the Papirus icons under GPL3.  
+Thanks to Gravit Designer for the Numberless icons under GPL3/MIT.  
+Twenoji was created by Twitter Team under MIT.  
 Mad respect to Adolf Hirémy-Hirschl for painting Die Seelen am Acheron
-under Creative Commons.
+under Creative Commons.  
