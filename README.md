@@ -1,4 +1,4 @@
-![Brand image](https://forsaken.place/preview.png)
+<img src="https://forsaken.place/preview.png" height="200" alt="brand icon">
 
 ## What this OS is: 
 
