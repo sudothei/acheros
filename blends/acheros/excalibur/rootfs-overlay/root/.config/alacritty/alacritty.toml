@@ -1,0 +1,66 @@
+# Default colors
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+bright_foreground = '#ffffff'
+
+[colors.cursor]
+text = "#ffffff"
+cursor = "#ffffff"
+
+[colors.vi_mode_cursor]
+text = "#ff00ff"
+cursor = "#ff00ff"
+
+[colors.normal]
+  black   ="#000000"
+  red     ="#a366ff"
+  green   ="#a82ee6"
+  yellow  ="#bb66cc"
+  blue    ="#f29df2"
+  magenta ="#4595e6"
+  cyan    ="#40dfff"
+  white   ="#4136d9"
+[colors.bright]
+  black   ="#7e5ce6"
+  red     ="#a886bf"
+  green   ="#c0f0ff"
+  yellow  ="#ec006d"
+  blue    ="#ff00ff"
+  magenta ="#ffe369"
+  cyan    ="#b08ae6"
+  white   ="#9045e6"
+
+[window]
+decorations = "none"
+dynamic_padding = false
+opacity = 0.9
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+size = 9.0
+
+[font.bold]
+family = "gomono"
+style = "Heavy"
+
+[font.bold_italic]
+family = "gomono"
+style = "Heavy Italic"
+
+[font.italic]
+family = "gomono"
+style = "Medium Italic"
+
+[font.normal]
+family = "gomono"
+style = "Medium"
+
+[terminal]
+shell = "fish"
+
+[general]
+live_config_reload = true

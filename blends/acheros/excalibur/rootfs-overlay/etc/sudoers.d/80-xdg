@@ -1,0 +1,1 @@
+Defaults:%sudo env_keep += "GTK_THEME XDG_*"

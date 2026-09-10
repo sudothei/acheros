@@ -1,0 +1,7 @@
+PRETTY_NAME="AcherOS GNU/Linux 6 (excalibur)"
+NAME="AcherOS GNU/Linux"
+VERSION_ID="6"
+VERSION="6 (excalibur)"
+VERSION_CODENAME="excalibur"
+ID=acheros
+ID_LIKE=debian

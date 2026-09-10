@@ -1,0 +1,42 @@
+This virtual service provides a facility to make runscripts that depends on a
+syslog daemon portable across different systems, for instance when
+the logger daemon name is not known in advance.
+This service is not a logger daemon itself, and does not provide runscripts
+for syslog daemons.
+
+Usage:
+
+ * make sure this service is enabled in your rundirectory
+
+  # update-service --add /etc/sv/default-syslog
+
+ * to make sure that a syslog daemon is avaliable before your service is up
+    add the following line in the run file of your service
+
+      'sv start default-syslog  &&  sv check default-syslog  ||  exit 170'
+
+Given that the trick is done in the check file, the sleep time in the default-syslog
+service can be raised at will.
+In the majority of cases this service will check if some process is listening to /dev/log; as
+a fallback for when programs used to check /dev/log are not available, the check file loops
+throught a hardcoded list of syslog daemons and discover if they are up.
+To avoid the fallback make sure that at least one package between socklog, ucspi-unix
+and psmisc is installed.
+
+Limits/bugs:
+
+* when fuser (psmisc) is used this service fails to catch a logger running in a different
+   namespace; also fuser is not available in Hurd.
+
+ * when the fallback is used the default-syslog works only if:
+    1. at least one native runit service exists for a syslog daemon
+    2. the name of the native runit service match the one in the check file
+    3. the syslog daemon is enabled in the current rundirectory
+
+    the fallback does not work if the logger is started with a sysvinit script or with
+    a systemd service.
+    Note that when runit is init, sysvscripts are always started before runsvdir, so
+    as long as no native runscript is available for the syslog daemon, it is possible
+    to skip the check for syslog in any runscript.
+
+ 

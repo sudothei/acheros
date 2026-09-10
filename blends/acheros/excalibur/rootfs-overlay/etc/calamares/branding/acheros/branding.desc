@@ -1,0 +1,39 @@
+---
+componentName:   acheros
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 800px,580px
+windowPlacement: center
+
+strings:
+    productName:         AcherOS GNU/Linux
+    shortProductName:    AcherOS
+    version:             1
+    shortVersion:        1
+    versionedName:       AcherOS 1
+    shortVersionedName:  AcherOS 1
+    bootloaderEntryName: Acheros
+    productUrl:          https://forsaken.place
+    supportUrl:          https://www.forsaken.place/support
+    knownIssuesUrl:      https://bugs.forsaken.place
+    releaseNotesUrl:     https://www.forsaken.place/releases/trixie/releasenotes
+    donateUrl:           https://www.forsaken.place
+
+sidebar: widget
+navigation: widget
+
+images:
+    productLogo:         "stairs.png"
+    productIcon:         "stairs.png"
+    productWelcome:      "acheros-logo.png"
+
+slideshow:               "show.qml"
+
+style:
+   SidebarBackground:    "#a366ff"
+   SidebarText:          "#FFFFFF"
+   SidebarTextCurrent:   "#fbfbfb"
+   SidebarBackgroundCurrent: "#a82ee6"
+
+slideshowAPI: 2

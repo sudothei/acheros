@@ -1,0 +1,31 @@
+{
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "py",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "typescript",
+    "typescriptreact",
+    "rust"
+  ],
+  "eslint.filetypes": ["javascript", "javascriptreact", "python"],
+  "eslint.packageManager": "npm",
+  "diagnostic.errorSign": "🔥",
+  "diagnostic.warningSign": "👉",
+  "diagnostic.infoSign": "💡",
+  "diagnostic.hintSign": "🔧",
+  "javascript.suggestionActions.enabled": false,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": " ---> ",
+  "diagnostic.enableMessage": "jump",
+  "codeLens.enable": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.banditEnabled": true,
+  "python.formatting.provider": "black",
+  "snippets.ultisnips.pythonPrompt": false
+}

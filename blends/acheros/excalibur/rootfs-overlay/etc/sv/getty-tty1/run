@@ -1,0 +1,16 @@
+#!/bin/sh -euC
+
+# Disable service, if /dev/tty{N} does not exist. See #914788.
+if ! test -c /dev/tty1 ; then
+	mv /etc/service/getty-tty1 /etc/service/.getty-tty1
+	exit 0
+fi
+
+# terminate early if tty1 used
+fuser -v /dev/tty1 && exit 163
+
+# check if fgetty exists and if it does use that instead
+! type fgetty >/dev/null 2>&1 || exec chpst -P fgetty tty1
+
+# run getty
+exec chpst -P getty -a $(getent passwd 1000 | sed 's/:.*//') 38400 tty1 linux

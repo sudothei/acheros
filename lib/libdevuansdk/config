@@ -1,0 +1,84 @@
+#!/usr/bin/env zsh
+# shellcheck shell=bash
+# Copyright (c) 2016-2021 Ivan J. <parazyd@dyne.org>
+# This file is part of libdevuansdk
+#
+# This source code is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This software is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this source code. If not, see <http://www.gnu.org/licenses/>.
+
+vars+=(release version mirror section blend_name image_name vm_name)
+vars+=(arch earch)
+vars+=(usercredentials rootcredentials)
+vars+=(COMPRESS_IMAGE CPIO_STAGE4 MKEFI)
+
+arrs+=(core_packages base_packages purge_packages blend_packages)
+arrs+=(core_packages_option base_packages_option purge_packages_option blend_packages_option)
+
+os="acheros"
+release="excalibur"
+version="6.0.0"
+mirror="https://pkgmaster.devuan.org/merged"
+section="main contrib non-free"
+
+image_name="${os}_${release}_${version}_${arch}"
+[[ -n "$blend_name"  ]] && image_name="${image_name}_${blend_name}"
+[[ -n "$device_name" ]] && image_name="${image_name}_${device_name}"
+
+vm_name="${os}_${release}_${version}_${arch}_virtual"
+[[ -n "$blend_name" ]] && vm_name="${vm_name}_${blend_name}"
+
+rootcredentials="root:toor"
+
+core_packages_option=()
+core_packages=(
+	devuan-keyring
+	debian-keyring
+	ca-certificates
+	initramfs-tools
+	e2fsprogs
+	bzip2
+	curl
+	less
+	vim
+	nano
+        runit
+)
+
+base_packages_option=()
+base_packages=(
+	apt-utils
+	parted
+	openssh-server
+	openssh-client
+	sudo
+	alsa-utils
+	mawk
+	tmux
+	screen
+	ntpsec
+	wpasupplicant
+	wireless-tools
+	lynx
+	firmware-linux-free
+	btrfs-progs
+	zsh
+	rsync
+	git-core
+	plocate
+	locales
+	htop
+)
+
+purge_packages_option=()
+purge_packages+=(
+)

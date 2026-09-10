@@ -1,0 +1,75 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "position": "top",
+    "height": 28,
+    "spacing": 4,
+    "modules-left": [
+        "cpu",
+        "memory",
+        "temperature"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "bluetooth",
+        "backlight",
+        "pulseaudio",
+        "battery",
+        "tray"
+    ],
+    "tray": {
+        "icon-size": 15
+    },
+    "bluetooth": {
+        "format": "BT:{status}"
+    },
+    "clock": {
+        "format": "{:%T}",
+        "interval": 1,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "format": {
+                "months": "<span color='#ffffff'><b>{}</b></span>",
+                "weekdays": "<span color='#ff00ff'><b>{}</b></span>",
+                "today": "<span color='#000000' background='#ff00ff'><b>{}</b></span>"
+            }
+        }
+    },
+    "cpu": {
+        "format": "CPU:{usage}%",
+        "tooltip": true,
+        "states":{
+	  "warning": 50,
+          "critical": 90
+        }
+    },
+    "memory": {
+        "format": "RAM:{}%",
+        "states":{
+	  "warning": 50,
+          "critical": 90
+        }
+    },
+    "temperature": {
+        "warning-threshold": 75, //this is stored in celcius only
+        "critical-threshold": 90, //this is stored in celcius only
+        "format": "{temperatureC}°C"
+    },
+    "backlight": {
+        "format": "LUX:{percent}%"
+    },
+    "battery": {
+        "format": "BAT:{capacity}%-",
+        "format-charging": "BAT:{capacity}%+",
+        "states":{
+	  "warning": 25,
+          "critical": 10
+        }
+    },
+    "pulseaudio": {
+        "format": "VOL:{volume}%",
+        "format-muted": "MUTED"
+    }
+}

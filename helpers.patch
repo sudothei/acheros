@@ -1,0 +1,6 @@
+319,320c319,320
+< 	act "${funneh[$rnd]}"
+< 	[[ $arg1 = sleep ]] && sleep $arg2 || true
+---
+> 	# act "${funneh[$rnd]}"
+> 	# [[ $arg1 = sleep ]] && sleep $arg2 || true

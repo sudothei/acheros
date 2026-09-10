@@ -1,0 +1,139 @@
+#!/usr/bin/env zsh
+
+base_packages+=(
+    $grubversion
+    acpi-fakekey
+    acpi-support-base
+    aptitude
+    apt-listchanges
+    bash-completion
+    btrfs-progs
+    console-setup
+    cracklib-runtime
+    debootstrap
+    discover
+    dnsutils
+    doc-debian
+    docutils-common
+    docutils-doc
+    dosfstools
+    exfatprogs
+    firefox-esr
+    gettext
+    # grub-pc-bin
+    laptop-detect
+    lsof
+    lvm2
+    net-tools
+    plocate
+    procmail
+    rfkill
+    texinfo
+    util-linux-locales
+    xfsprogs
+)
+
+
+extra_packages+=(
+    cryptsetup-initramfs
+    gdisk
+    gvfs-backends
+    # refractainstaller-base
+    # yad
+)
+
+
+extra_packages+=(
+    firmware-amd-graphics
+    firmware-ath9k-htc
+    firmware-atheros
+    firmware-bnx2
+    firmware-bnx2x
+    firmware-brcm80211
+    firmware-carl9170
+    firmware-intel-graphics
+    firmware-intel-misc
+    firmware-iwlwifi
+    firmware-libertas
+    firmware-linux-free
+    firmware-linux-nonfree
+    firmware-mediatek
+    firmware-misc-nonfree
+    firmware-myricom
+    firmware-netxen
+    firmware-nvidia-graphics
+    firmware-qlogic
+    firmware-realtek
+    firmware-sof-signed
+    firmware-ti-connectivity
+    firmware-zd1211
+)
+
+
+extra_packages+=(
+    alacritty
+    alsa-utils
+    brightnessctl
+    calamares
+    curl
+    dunst
+    elogind
+    fish
+    fonts-recommended
+    git
+    irqbalance
+    neovim
+    network-manager
+    nix-bin
+    nix-setup-systemd
+    preload
+    pulseaudio
+    ranger
+    seatd
+    swaybg
+    swaylock
+    tlp
+    tmux
+    vim
+    waybar
+    wayfire
+    wdisplays
+    wl-clipboard
+    wlr-randr
+    wmfire
+    x11-xserver-utils
+    xcb-proto
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xwayland
+)
+
+
+purge_packages=(
+    #	amd64-microcode
+    debian-keyring
+    elinks
+    elinks-data
+    fgetty
+    #	intel-microcode
+    #	iucode-tool
+    liberror-perl
+    libfsplib0
+    libtre5
+    live-task-non-free-firmware-pc
+    live-task-non-free-firmware-server
+    mgetty
+    midisport-firmware
+    mingetty
+    ngetty
+    openntpd
+    openssh-server
+    openssh-sftp-server
+    raspi-firmware
+)
+
+
+
+### ALL packages in custom_debs get installed.
+custom_deb_packages+=(
+)
