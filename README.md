@@ -1,5 +1,3 @@
-<img src="https://forsaken.place/preview.png" height="200" alt="brand icon">
-
 ## What this OS is: 
 
 - Able to arrive at a user session extremely fast from cold boot.
