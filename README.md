@@ -1,3 +1,5 @@
+![Brand image](https://forsaken.place/preview.png)
+
 ## What this OS is: 
 
 - Able to arrive at a user session extremely fast from cold boot.
@@ -37,7 +39,7 @@ consumption.
 Liquorix is used instead of the normal kernel for performance boost.
 
 The login screen has been removed to reduce time from cold boot to a user
-session.
+session. Disk encryption is recommended, change if desired.
 
 ## Disclaimers:
 
